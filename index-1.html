@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My SVG House and Garden</title>
+</head>
+<body>
+
+  <h1>SVG House and Garden</h1>
+
+  <svg width="600" height="400">
+    <!-- House base -->
+    <rect x="200" y="200" width="200" height="150" fill="lightblue" stroke="black" />
+
+    <!-- Roof -->
+    <polygon points="200,200 300,120 400,200" fill="brown" stroke="black" />
+
+    <!-- Door -->
+    <rect x="280" y="270" width="40" height="80" fill="saddlebrown" stroke="black" />
+
+    <!-- Sun -->
+    <circle cx="500" cy="80" r="40" fill="gold" stroke="orange" stroke-width="3" />
+
+    <!-- Windows group -->
+    <g class="windows" transform="translate(0, 0)">
+      <rect x="230" y="220" width="30" height="30" fill="white" stroke="black" />
+      <rect x="340" y="220" width="30" height="30" fill="white" stroke="black" />
+    </g>
+
+  </svg>
+
+  <h2>Annotated Screenshot of SVG</h2>
+  <img src="svg.png" alt="Annotated SVG Drawing" width="600">
+
+  <h2>Screenshot of DOM</h2>
+  <img src="dom.png" alt="DOM Structure of SVG" width="600">
+
+</body>
+</html>
